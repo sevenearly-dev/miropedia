@@ -1,5 +1,5 @@
 ---
-title: comic and game lovers how to plan travel to Japan
+title: How manga lovers can plan their trip to Japan
 date: '2023-05-16'
 lastmod: '2023-05-16'
 tags:
@@ -13,10 +13,10 @@ authors:
   - default
 draft: false
 summary: >-
-  comic and game lovers how to plan travel to Japan
+  How manga lovers can plan their trip to Japan
 
 status: published
-name: comic and game lovers how to plan travel to Japan
+name: How manga lovers can plan their trip to Japan
 slug: ''
 coverImage: /images/industrial-pattern.png
 layout: PostLayout
