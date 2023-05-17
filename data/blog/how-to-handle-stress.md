@@ -1,5 +1,5 @@
 ---
-title: 如何处理压力和挫折？
+title: How to handle stress？
 date: '2023-05-12'
 lastmod: '2023-05-12'
 tags:
@@ -20,7 +20,7 @@ summary: >-
 
 
 status: published
-name: 如何处理压力和挫折？
+name: How to handle stress？
 slug: ''
 coverImage: /images/industrial-pattern.png
 layout: PostLayout
