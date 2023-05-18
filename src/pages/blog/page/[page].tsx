@@ -5,6 +5,7 @@ import ListLayout from '@/layouts/ListLayout'
 import { POSTS_PER_PAGE } from '../../blog'
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next'
 import { PostFrontMatter } from 'types/PostFrontMatter'
+import Locale from "../../../locales";
 
 export const getStaticPaths: GetStaticPaths<{ page: string }> = async () => {
   const totalPosts = await getAllFilesFrontMatter('blog')
@@ -59,7 +60,7 @@ export default function PostPage({
         posts={posts}
         initialDisplayPosts={initialDisplayPosts}
         pagination={pagination}
-        title="所有文章"
+        title={Locale.Articles.All}
       />
     </>
   )

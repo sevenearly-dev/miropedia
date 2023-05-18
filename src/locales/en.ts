@@ -1,4 +1,5 @@
 // import { SubmitKey } from "../store/config";
+import Pre from "@/components/Pre";
 import type { LocaleType } from "./index";
 
 const en: LocaleType = {
@@ -17,12 +18,19 @@ const en: LocaleType = {
     Chat: "Chat",
     Memory: "Memory",
     Export: "Export",
+    Contents: "Contents",
     // Video: "视频",
     // Projects: "项目",
   },
   Articles: {
     Title: "Title",
     More: "Show more",
+    Next: "Next Article",
+    Previous: "Previous Article",
+    All: "All Articles",
+    BackList : "Back to List",
+    Latest: "Lastest Articles",
+    Mytags: "My Tags",
     SubTitle: "SubTitle",
     Search: "Search",
     Create: "Create",

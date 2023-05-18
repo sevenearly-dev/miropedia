@@ -4,6 +4,7 @@ import ListLayout from '@/layouts/ListLayout'
 import { PageSEO } from '@/components/SEO'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { ComponentProps } from 'react'
+import Locale from "../locales";
 
 export const POSTS_PER_PAGE = 5
 
@@ -29,12 +30,12 @@ export default function Blog({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <>
-      <PageSEO title={`全部文章 - ${siteMetadata.author}`} description={siteMetadata.description} />
+      <PageSEO title={`${Locale.Articles.All} - ${siteMetadata.author}`} description={siteMetadata.description} />
       <ListLayout
         posts={posts}
         initialDisplayPosts={initialDisplayPosts}
         pagination={pagination}
-        title="全部文章"
+        title={Locale.Articles.All}
       />
     </>
   )
