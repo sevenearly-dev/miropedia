@@ -11,7 +11,7 @@ const components = {
   mail: Mail,
   github: Github,
   juejin: Juejin,
-  zhihu: Zhihu,
+  // zhihu: Zhihu,
   linkedin: Linkedin,
   twitter: Twitter,
 }
