@@ -16,7 +16,8 @@ const siteMetadata = {
   facebook: 'https://aaa',
   juejin: 'https://aaa',
   zhihu: 'https://aaa',
-  locale: 'zh-CN',
+  // locale: 'zh-CN',
+  locale: 'en-us',
   welcome: 'Miropedia',
   analytics: {
     //如果要使用分析提供程序，则必须将其添加到。
