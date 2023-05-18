@@ -4,6 +4,7 @@ import Link from '@/components/Link'
 import Tag from '@/components/Tag'
 import formatDate from '@/lib/utils/formatDate'
 import { PostFrontMatter } from 'types/PostFrontMatter'
+import Locale from "../locales";
 
 export default function Article({ slug, date, title, summary, tags, images }: PostFrontMatter) {
   const src = Array.isArray(images) ? images[0] : images
@@ -54,7 +55,7 @@ export default function Article({ slug, date, title, summary, tags, images }: Po
                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                 aria-label={`Read "${title}"`}
               >
-                查看更多 &rarr;
+                {Locale.Articles.More} &rarr;
               </Link>
             </div>
           </div>
