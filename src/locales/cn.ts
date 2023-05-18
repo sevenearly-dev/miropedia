@@ -39,6 +39,10 @@ const cn = {
       Title: "编辑文章",
     },
   },
+  About: {
+    Title: "关于",
+    Me: "关于我",
+  },
   Export: {
     Title: "导出聊天记录为 Markdown",
     Copy: "全部复制",
@@ -110,24 +114,6 @@ const cn = {
       Title: "面具启动页",
       SubTitle: "新建聊天时，展示面具启动页",
     },
-    Prompt: {
-      Disable: {
-        Title: "禁用提示词自动补全",
-        SubTitle: "在输入框开头输入 / 即可触发自动补全",
-      },
-      List: "自定义提示词列表",
-      ListCount: (builtin: number, custom: number) =>
-        `内置 ${builtin} 条，用户定义 ${custom} 条`,
-      Edit: "编辑",
-      Modal: {
-        Title: "提示词列表",
-        Add: "新建",
-        Search: "搜索提示词",
-      },
-      EditModal: {
-        Title: "编辑提示词",
-      },
-    },
     HistoryCount: {
       Title: "附带历史消息数",
       SubTitle: "每次请求携带的历史消息数",
@@ -141,47 +127,6 @@ const cn = {
       SubTitle: "使用自己的 Key 可绕过密码访问限制",
       Placeholder: "OpenAI API Key",
     },
-
-    Usage: {
-      Title: "余额查询",
-      SubTitle(used: any, total: any) {
-        return `本月已使用 $${used}，订阅总额 $${total}`;
-      },
-      IsChecking: "正在检查…",
-      Check: "重新检查",
-      NoAccess: "输入 API Key 或访问密码查看余额",
-    },
-    AccessCode: {
-      Title: "访问密码",
-      SubTitle: "已开启加密访问",
-      Placeholder: "请输入访问密码",
-    },
-    Model: "模型 (model)",
-    Temperature: {
-      Title: "随机性 (temperature)",
-      SubTitle: "值越大，回复越随机",
-    },
-    MaxTokens: {
-      Title: "单次回复限制 (max_tokens)",
-      SubTitle: "单次交互所用的最大 Token 数",
-    },
-    PresencePenlty: {
-      Title: "话题新鲜度 (presence_penalty)",
-      SubTitle: "值越大，越有可能扩展到新话题",
-    },
-  },
-  Store: {
-    DefaultTopic: "新的聊天",
-    BotHello: "有什么可以帮你的吗",
-    Error: "出错了，稍后重试吧",
-    Prompt: {
-      History: (content: string) =>
-        "这是 ai 和用户的历史聊天总结作为前情提要：" + content,
-      Topic:
-        "使用四到五个字直接返回这句话的简要主题，不要解释、不要标点、不要语气词、不要多余文本，如果没有主题，请直接返回“闲聊”",
-      Summarize:
-        "简要总结一下你和用户的对话，用作后续的上下文提示 prompt，控制在 200 字以内",
-    },
   },
   Copy: {
     Success: "已写入剪切板",
@@ -194,42 +139,6 @@ const cn = {
   },
   Plugin: {
     Name: "插件",
-  },
-  Mask: {
-    Name: "面具",
-    Page: {
-      Title: "预设角色面具",
-      SubTitle: (count: number) => `${count} 个预设角色定义`,
-      Search: "搜索角色面具",
-      Create: "新建",
-    },
-    Item: {
-      Info: (count: number) => `包含 ${count} 条预设对话`,
-      Chat: "对话",
-      View: "查看",
-      Edit: "编辑",
-      Delete: "删除",
-      DeleteConfirm: "确认删除？",
-    },
-    EditModal: {
-      Title: (readonly: boolean) =>
-        `编辑预设面具 ${readonly ? "（只读）" : ""}`,
-      Download: "下载预设",
-      Clone: "克隆预设",
-    },
-    Config: {
-      Avatar: "角色头像",
-      Name: "角色名称",
-    },
-  },
-  NewChat: {
-    Return: "返回",
-    Skip: "直接开始",
-    NotShow: "不再展示",
-    ConfirmNoShow: "确认禁用？禁用后可以随时在设置中重新启用。",
-    Title: "挑选一个面具",
-    SubTitle: "现在开始，与面具背后的灵魂思维碰撞",
-    More: "查看全部",
   },
 
   UI: {
